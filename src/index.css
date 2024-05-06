@@ -1,0 +1,114 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Syne:wght@400..800&display=swap');
+
+@font-face {
+  font-family: 'Wildy Sans Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Wildy Sans Regular'), url('Wildy Sans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Norse';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Norse'), url('Norse') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL STYLES */
+
+@layer base {
+  button {
+    @apply border py-2 px-3 rounded-full bg-lightgreen text-white p-4
+  }
+
+  /* HERO */
+  h1 {
+    @apply font-logo capitalize font-medium text-offwhite;
+  }
+
+  /* NAV LOGO */
+  h2 {
+    @apply font-logo capitalize font-normal text-offwhite;
+  }
+
+  /* HEADING */
+  h3 {
+    @apply text-lg font-light text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-nightblue p-2;
+  }
+
+  /* FOOTER */
+  h4 {
+    @apply text-sm font-normal text-pink-500 uppercase;
+  }
+
+  p {
+    @apply text-base font-light text-white leading-7 text-left pb-4;
+  }
+}
+
+@layer utilities {
+  .shadow-custom {
+    --tw-shadow-color: #1EFFE7;
+    box-shadow: 0 0 0px 3px var(--tw-shadow-color), 10px 10px 15px 5px var(--tw-shadow-color);
+  }
+
+  .navbar-link-effect {
+    color: #FF60B1;
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
+
+    &:hover {
+      color: #1EFFE7;
+      transform: scale(1.05);
+    }
+
+    &:active {
+      color: #1EFFE7;
+    }
+  }
+
+  .logo-link-effect {
+    color: #FF60B1;
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
+
+    &:hover {
+      color: #1EFFE7;
+    }
+
+    &:active {
+      color: #1EFFE7;
+    }
+  }
+}
+
+
+
+/* SCROLLBAR */
+/* Track */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--nightblue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #285e63;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #14272F;
+}
+
+/* Handle when dragging */
+::-webkit-scrollbar-thumb:active {
+  background: #195158;
+}
