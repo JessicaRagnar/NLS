@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import MainButton from './buttons/MainButton'
 
 const Hero = () => {
@@ -12,11 +13,11 @@ const Hero = () => {
           <h1 className='text-5xl md:text-7xl drop-shadow-2xl mb-4'>Northern Lights Society</h1>
 
 
-          <a href="#home">
+          <Link to="/home#home">
             <MainButton>
               Let the journey begin!
             </MainButton>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

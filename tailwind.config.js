@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         background: "#14272F",
+        cardbg: "#082134",
         nightblue: "#04121E",
         offwhite: "#EFEFEF",
         hotpink: "#FF60B1",
@@ -19,7 +20,10 @@ export default {
         lightgreen: "#328F99",
         brightturquise: "#1EFFE7",
       },
+      backgroundImage: {
+        'bgIMG': "url('/src/assets/images/background.png')",
     },
+  },
   },
   plugins: [],
 };

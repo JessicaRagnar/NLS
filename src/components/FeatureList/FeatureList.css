@@ -1,7 +1,7 @@
 
 /* FEATURE LIST */
 .feature-card {
-    flex: 0 0 calc(33.33% - 20px);
+    flex: 0 0 calc(30% - 20px);
     margin: 10px;
     text-align: center;
     transition: transform 0.8s ease;
@@ -9,7 +9,7 @@
   }
   
   .feature-card img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
     animation: pulse 20s infinite ease-in-out;
   }

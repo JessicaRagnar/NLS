@@ -3,7 +3,7 @@ import { NavLink as RouterNavLink } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-between items-center pt-12 px-20 bg-nightblue text-2xl">
+        <nav id="home" className="flex justify-between items-center p-16 px-20 bg-nightblue text-2xl">
             <RouterNavLink to="/" className="logo-link-effect">
                 <h1>Northern Lights Society</h1>
             </RouterNavLink>
