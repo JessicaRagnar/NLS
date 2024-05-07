@@ -1,0 +1,53 @@
+
+/* FEATURE LIST */
+.feature-card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.8s ease;
+    cursor: pointer;
+  }
+  
+  .feature-card img {
+    max-width: 90%;
+    height: auto;
+    animation: pulse 20s infinite ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease;
+  }
+  
+  .feature-card a:hover h3 {
+    text-transform: capitalize;
+  }
+  
+  @keyframes text-fade {
+    0%, 100% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .feature-card h3 {
+    transition: color 1s ease, transform 2s ease;
+    animation: text-fade 3s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.08);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

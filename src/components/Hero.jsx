@@ -1,7 +1,8 @@
 import React from 'react'
-import LayeredButton from './buttons/MainButton';
+import MainButton from './buttons/MainButton'
 
 const Hero = () => {
+
   return (
     <div className='relative w-full h-screen'>
       <img className="absolute top-0 left-0 w-full h-screen object-cover" src="././src/assets/images/bg_hero.png" alt="Background" />
@@ -11,9 +12,11 @@ const Hero = () => {
           <h1 className='text-5xl md:text-7xl drop-shadow-2xl mb-4'>Northern Lights Society</h1>
 
 
-          <LayeredButton>
-            Let the journey begin!
-          </LayeredButton>
+          <a href="#home">
+            <MainButton>
+              Let the journey begin!
+            </MainButton>
+          </a>
         </div>
       </div>
     </div>

@@ -26,28 +26,28 @@
     @apply border py-2 px-3 rounded-full bg-lightgreen text-white p-4
   }
 
-  /* HERO */
+  /* HERO & NAV LOGO*/
   h1 {
     @apply font-logo capitalize font-medium text-offwhite;
   }
 
-  /* NAV LOGO */
-  h2 {
-    @apply font-logo capitalize font-normal text-offwhite;
-  }
-
   /* HEADING */
-  h3 {
-    @apply text-lg font-light text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-nightblue p-2;
+  h2 {
+    @apply font-heading capitalize font-medium text-transparent bg-clip-text bg-gradient-to-l from-brightturquise to-lightgreen pb-2;
   }
 
-  /* FOOTER */
+  /* FEATURELIST */
+  h3 {
+    @apply font-logo font-medium text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
+  }
+
+  /* ? */
   h4 {
     @apply text-sm font-normal text-pink-500 uppercase;
   }
 
   p {
-    @apply text-base font-light text-white leading-7 text-left pb-4;
+    @apply font-body text-base font-light text-white leading-7 text-left pb-4;
   }
 }
 
@@ -84,7 +84,6 @@
     }
   }
 }
-
 
 
 /* SCROLLBAR */
