@@ -4,12 +4,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        logo: ['"Wildy Sans Regular"', "sans-serif"],
-        body: ['"Syne"', 'sans-serif'], 
+        logo: ['Wildy Sans Regular', 'sans-serif'],
+        body: ['Syne', 'sans-serif'], 
         links: ['Norse', 'normal'],
+        heading: ['Amarante', 'serif'],
         
       },
       colors: {
+        background: "#14272F",
         nightblue: "#04121E",
         offwhite: "#EFEFEF",
         hotpink: "#FF60B1",
