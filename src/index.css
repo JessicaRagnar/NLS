@@ -33,7 +33,7 @@
 
   /* HEADING */
   h2 {
-    @apply font-heading capitalize font-medium text-transparent bg-clip-text bg-gradient-to-l from-brightturquise to-lightgreen pb-2;
+    @apply font-heading uppercase font-medium text-transparent bg-clip-text bg-gradient-to-l from-brightturquise to-lightgreen pb-2;
   }
 
   /* FEATURELIST */
@@ -41,13 +41,16 @@
     @apply font-logo font-medium text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
   }
 
-  /* ? */
+  /* SMALL HEADING */
   h4 {
-    @apply text-sm font-normal text-pink-500 uppercase;
+    @apply font-logo font-medium lowercase text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
   }
-
+  /* SYNE HEADING */
+  h5 {
+    @apply font-body font-normal leading-5 text-left pb-4;
+  }
   p {
-    @apply font-body text-base font-light text-white leading-7 text-left pb-4;
+    @apply font-body font-normal text-offwhite leading-6 text-left pb-4;
   }
 }
 
