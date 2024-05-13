@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MainButton from './buttons/MainButton';
 import './stars.css'
+import nlsImage from '../assets/images/nls.png';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +17,8 @@ const Hero = () => {
 
   return (
     <div className='relative w-full h-screen'>
-      <img className="absolute top-0 left-0 w-full h-screen object-cover" src="././src/assets/images/nls.png" alt="Background" />
+      <img className="absolute top-0 left-0 w-full h-screen object-cover" src={nlsImage} alt="Background" />
+
       <div className='absolute top-0 left-0 w-full h-screen bg-black/30'></div>
       <div className='absolute top-0 w-full h-full flex flex-col justify-end items-center text-center'>
 
