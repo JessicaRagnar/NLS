@@ -1,12 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaDiscord, FaGithub } from 'react-icons/fa'; // Import Discord and GitHub icons from React Icons
+import { NavLink } from 'react-router-dom'; // Importera NavLink
+import { FaDiscord, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
+  console.log("Rendering Footer");
   return (
     <div className='bg-gradient-to-t from-nightblue to-nightblue/50 py-12 text-bluegreen'>
       <div className='container mx-auto grid grid-cols-2 items-start'>
-        {/* Text column */}
+
         <div>
           <h5 className='text-2xl'>
             Northern<br />
@@ -16,20 +17,19 @@ const Footer = () => {
           <p className='text-bluegreen text-lg mt-2'>2024</p>
         </div>
 
-        {/* Links and social icons column */}
         <div>
-          {/* Navigation Links */}
           <div className='flex justify-end space-x-4 font-body text-2xl'>
-            <Link to="/about" className='hover:text-offwhite/80'>About</Link>
-            <Link to="/guidance" className='hover:text-offwhite/80'>Guidance</Link>
-            <Link to="/contact" className='hover:text-offwhite/80'>Contact</Link>
+
+            <NavLink to="/about" activeClassName='text-offwhite/80' className='hover:text-offwhite/80'>About</NavLink>
+            <NavLink to="/guidance" activeClassName='text-offwhite/80' className='hover:text-offwhite/80'>Guidance</NavLink>
+            <NavLink to="/contact" activeClassName='text-offwhite/80' className='hover:text-offwhite/80'>Contact</NavLink>
           </div>
-          {/* Social Media Icons */}
-          <div className='flex justify-end space-x-6 mt-2 text-3xl'>  {/* Adjusted the spacing and alignment to match the menu */}
+
+          <div className='flex justify-end space-x-6 mt-2 text-3xl'>
             <a href="https://discord.com" className='hover:text-offwhite/80' target="_blank" rel="noopener noreferrer">
               <FaDiscord />
             </a>
-            <a href="https://github.com" className='hover:text-offwhite/80' target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/JessicaRagnar/NLS" className='hover:text-offwhite/80' target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
           </div>

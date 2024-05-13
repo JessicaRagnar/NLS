@@ -15,9 +15,9 @@ const SoundToggle = () => {
                 onClick={toggleSound}
             >
                 {soundOn ? (
-                    <AiFillSound className='text-brightturquise/50' size={25} />
+                    <AiFillSound className='text-brightturquise/30' size={25} />
                 ) : (
-                    <AiOutlineSound className='text-brightturquise/50' size={25} />
+                    <AiOutlineSound className='text-brightturquise/30' size={25} />
                 )}
             </div>
         </div>

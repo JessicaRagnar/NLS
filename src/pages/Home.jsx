@@ -1,12 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import MainButton from '../components/buttons/MainButton'
-import FeatureList from '../components/FeatureList/FeatureList'
-import Footer from '../components/Footer'
-import About from '../components/About'
-import ImageDivider from '../components/ImageDivider'
-import ScrollToTopButton from '../components/buttons/BackToTop'
-import backgroundImage from '../assets/images/background.png'
+import MainButton from '../components/buttons/MainButton';
+import FeatureList from '../components/FeatureList/FeatureList';
+import About from '../components/About';
+import ImageDivider from '../components/ImageDivider';
+import ScrollToTopButton from '../components/buttons/BackToTop';
+import backgroundImage from '../assets/images/background.png';
 
 const Home = () => {
     const location = useLocation();
@@ -29,7 +28,7 @@ const Home = () => {
         <div id="home" className="flex flex-col min-h-screen">
             <div className="flex-grow">
                 <div className='relative w-full h-screen'>
-                <img className="absolute top-0 left-0 w-full h-screen object-cover" src={backgroundImage} alt="Background" />
+                    <img className="absolute top-0 left-0 w-full h-screen object-cover" src={backgroundImage} alt="Background" />
                     <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-nightblue to-nightblue/10"></div>
 
                     <div className='absolute top-0 w-full h-full flex justify-center items-center text-offwhite'>
@@ -61,8 +60,7 @@ const Home = () => {
             <ImageDivider />
             <div ref={aboutRef}><About /></div>
             <ScrollToTopButton />
-            <Footer />
-
+       
         </div>
 
     )

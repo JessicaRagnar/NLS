@@ -5,8 +5,7 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 
 export default function Navbar() {
     const handleNavLinkClick = (event) => {
-        const targetId = event.currentTarget.getAttribute('href').substring(1); // Ta bort '#' från href för att få id
-        const element = document.getElementById(targetId);
+        const targetId = event.currentTarget.getAttribute('href').substring(1); 
 
         if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
