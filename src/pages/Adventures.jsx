@@ -1,9 +1,10 @@
 import React from 'react'
 import FeatureList from '../components/FeatureList/FeatureList.jsx'
+import ScrollToTopButton from '../components/buttons/BackToTop'
 
 const Adventures = () => {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div id="adventures" className="flex flex-col min-h-screen">
             <div className="flex-grow">
                 <div className='relative w-full h-screen'>
                     <img className="absolute top-0 left-0 w-full h-screen object-cover" src="././src/assets/images/background.png" alt="Background" />
@@ -18,7 +19,7 @@ const Adventures = () => {
                     </div>
                 </div>
             </div>
-
+            <ScrollToTopButton />
         </div>
     )
 }

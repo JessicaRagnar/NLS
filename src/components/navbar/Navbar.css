@@ -1,0 +1,43 @@
+/* PINK ARROW */
+.navbar-link-effect {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+}
+
+.navbar-link-effect::after {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-60%) rotate(-45deg);
+    width: 12px;
+    height: 12px;
+    background-image: url('/src/assets/icons/pink_arrow.png');
+    background-size: cover;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-link-effect:hover::after,
+.navbar-link-effect.active::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.navbar-link-effect.active::after {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.navbar-link-effect {
+    color: #FF60B1;
+    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.navbar-link-effect:hover {
+    color: #1EFFE7;
+    transform: scale(1.05);
+}
+
+.active {
+    color: #1EFFE7;
+}
