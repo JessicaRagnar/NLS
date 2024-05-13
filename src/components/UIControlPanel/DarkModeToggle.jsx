@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
 
 const DarkModeToggle = () => {
-    const [darkMode, setDarkMode] = useState(false); // Tillstånd för att spåra om mörkt läge är på eller av
+    const [darkMode, setDarkMode] = useState(false);
 
     const toggleDarkMode = () => {
-        setDarkMode(!darkMode); // Växlar mörkt läge tillståndet
+        setDarkMode(!darkMode); 
     };
 
     return (
@@ -15,9 +15,9 @@ const DarkModeToggle = () => {
                 onClick={toggleDarkMode}
             >
                 {darkMode ? (
-                    <MdOutlineLightMode className='text-brightturquise/50' size={25} />
+                    <MdOutlineLightMode className='text-brightturquise/30' size={25} />
                 ) : (
-                    <MdOutlineDarkMode className='text-brightturquise/50' size={25} />
+                    <MdOutlineDarkMode className='text-brightturquise/30' size={25} />
                 )}
             </div>
         </div>
