@@ -1,5 +1,5 @@
 import UIControlPanel from './components/UIControlPanel/UIControlPanel.jsx';
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/navbar/Navbar.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero.jsx'
 import Home from './pages/Home'

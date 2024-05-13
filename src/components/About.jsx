@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollToTopButton from '../components/buttons/BackToTop'
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
       {/* Container för innehåll: Centrerar allt innehåll inom hela sidans område */}
       <div className="absolute top-0 w-full h-full flex flex-col justify-start items-center text-center">
         {/* Kortet som innehåller bilder och text, positionerat med marginal för att inte fylla hela skärmen */}
-        <div className="mt-4 w-[90%] relative">
+        <div className="mt-24 w-[90%] relative">
 
           {/* Bild i kortet: Visar en annan bild som är fullt rundad och täcker kortets område */}
           <img className="rounded-2xl object-cover w-full h-full absolute top-0 left-0 z-0" src="./src/assets/images/mountain.png" alt="Mountain" />
@@ -23,7 +24,7 @@ const About = () => {
           {/* Textlager: Detta är det översta lagret som innehåller rubriker och text */}
           <div className="text-center drop-shadow-md relative z-30 p-12">
           <h2 className="text-4xl md:text-4xl lg:text-5xl xl:text-5xl mb-4">Welcome to Northern Lights Society</h2>
-            <h4 className="text-3xl md:text-4xl lg:text-4xl xl:text-4xl mb-6">where immersive storytelling meets interactive gaming!</h4>
+            <h4 className="text-3xl md:text-4xl lg:text-4xl xl:text-4xl mb-6 text-hotpink">where immersive storytelling meets interactive gaming!</h4>
 
 
             {/* Två kolumner för att hantera layout för ytterligare innehåll, en tom och en med text */}
@@ -49,6 +50,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
 
 

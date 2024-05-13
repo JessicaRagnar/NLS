@@ -19,16 +19,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #14272F;
+  overflow-x: hidden
+}
+
 /* GLOBAL STYLES */
 
 @layer base {
-  button {
-    @apply border py-2 px-3 rounded-full bg-lightgreen text-white p-4
-  }
 
   /* HERO & NAV LOGO*/
   h1 {
-    @apply font-logo capitalize font-medium text-offwhite;
+    @apply font-logo capitalize font-medium text-offwhite/60;
   }
 
   /* HEADING */
@@ -38,54 +40,68 @@
 
   /* FEATURELIST */
   h3 {
-    @apply font-logo font-medium text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
+    @apply font-logo font-semibold text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
   }
 
   /* SMALL HEADING */
   h4 {
     @apply font-logo font-medium lowercase text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
   }
+
   /* SYNE HEADING */
   h5 {
     @apply font-body font-normal leading-5 text-left pb-4;
   }
+
   p {
     @apply font-body font-normal text-offwhite leading-6 text-left pb-4;
   }
 }
 
+/* PINK ARROW */
+.bg-arrow {
+  background-image: url('/src/assets/icons/pink_arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+  padding-right: 25px;
+}
+
+/* BUTTON SHADOW */
 @layer utilities {
   .shadow-custom {
-    --tw-shadow-color: #1EFFE7;
-    box-shadow: 0 0 0px 3px var(--tw-shadow-color), 10px 10px 15px 5px var(--tw-shadow-color);
+    --tw-shadow-color: #1effe983;
+    box-shadow: 0px 0px 0px 0px var(--tw-shadow-color), 8px 0px 100px 10px var(--tw-shadow-color);
   }
 
-  .navbar-link-effect {
-    color: #FF60B1;
-    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
-
-    &:hover {
-      color: #1EFFE7;
-      transform: scale(1.05);
-    }
-
-    &:active {
-      color: #1EFFE7;
-    }
+  .shadow-pink {
+    --tw-shadow-color: #ff60b2a9;
+    box-shadow: 0px 0px 0px 0px var(--tw-shadow-color), 0px 0px 20px 1px var(--tw-shadow-color);
   }
 
-  .logo-link-effect {
-    color: #FF60B1;
-    transition: color 0.8s ease-in-out, transform 0.8s ease-in-out;
-
-    &:hover {
-      color: #1EFFE7;
-    }
-
-    &:active {
-      color: #1EFFE7;
-    }
+}
+/* ANIMATION PULSE */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
+
+  50% {
+    transform: scale(1.04);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-effect {
+  animation: pulse 20s infinite;
+}
+
+
+.transition-opacity {
+  transition: opacity 20s ease-in-out; /* Smooth transition for opacity change */
 }
 
 
@@ -97,7 +113,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--nightblue);
+  background: #04121E;
 }
 
 /* Handle on hover */
@@ -114,3 +130,23 @@
 ::-webkit-scrollbar-thumb:active {
   background: #195158;
 }
+
+/* FAQ-SCROLLBAR */
+.FAQ-scrollbar::-webkit-scrollbar {
+  width: 14px;
+}
+
+.FAQ-scrollbar::-webkit-scrollbar-track {
+  background: #08213400;
+}
+
+.FAQ-scrollbar::-webkit-scrollbar-thumb {
+  background: #14272F;
+  border-radius: 10px;
+}
+
+.FAQ-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #1effe983;
+}
+
+

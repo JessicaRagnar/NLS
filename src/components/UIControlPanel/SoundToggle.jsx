@@ -10,14 +10,14 @@ const SoundToggle = () => {
 
     return (
         <div>
-            <div 
-            
+            <div className="bg-cardbg/80 p-3 rounded-l-lg cursor-pointer hover:bg-nightblue/80 transition-colors"
+
                 onClick={toggleSound}
             >
                 {soundOn ? (
-                    <AiFillSound className='text-black' size={25} />
+                    <AiFillSound className='text-brightturquise/50' size={25} />
                 ) : (
-                    <AiOutlineSound className='text-black' size={25} />
+                    <AiOutlineSound className='text-brightturquise/50' size={25} />
                 )}
             </div>
         </div>
