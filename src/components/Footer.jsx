@@ -1,35 +1,33 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'; // Importera NavLink
+import { NavLink } from 'react-router-dom';
 import { FaDiscord, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
-  console.log("Rendering Footer");
   return (
     <div className='bg-gradient-to-t from-nightblue to-nightblue/50 py-12 text-bluegreen'>
-      <div className='container mx-auto grid grid-cols-2 items-start'>
+      <div className='container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:items-start md:text-left'>
 
         <div>
-          <h5 className='text-2xl'>
+          <h6 className='text-xl md:text-2xl'>
             Northern<br />
             Lights <br />
             Society
-          </h5>
-          <p className='text-bluegreen text-lg mt-2'>2024</p>
+          </h6>
+          <h6 className='text-sm md:text-lg font-medium mt-2'>2024</h6>
         </div>
 
-        <div>
-          <div className='flex justify-end space-x-4 font-body text-2xl'>
-
-            <NavLink to="/about" activeClassName='text-offwhite/80' className='hover:text-offwhite/80'>About</NavLink>
-            <NavLink to="/guidance" activeClassName='text-offwhite/80' className='hover:text-offwhite/80'>Guidance</NavLink>
-            <NavLink to="/contact" activeClassName='text-offwhite/80' className='hover:text-offwhite/80'>Contact</NavLink>
+        <div className="mt-4 md:mt-0">
+          <div className='flex justify-center md:justify-end space-x-3 md:space-x-4 font-body text-xl md:text-2xl'>
+            <NavLink to="/about" activeClassName='text-lightgreen/80' className='hover:text-lightgreen/80'>About</NavLink>
+            <NavLink to="/guidance" activeClassName='text-lightgreen/80' className='hover:text-lightgreen/80'>Guidance</NavLink>
+            <NavLink to="/contact" activeClassName='text-lightgreen/80' className='hover:text-lightgreen/80'>Contact</NavLink>
           </div>
 
-          <div className='flex justify-end space-x-6 mt-2 text-3xl'>
-            <a href="https://discord.com" className='hover:text-offwhite/80' target="_blank" rel="noopener noreferrer">
+          <div className='flex justify-center md:justify-end space-x-5 mt-2 text-2xl md:text-3xl'>
+            <a href="https://discord.com" className='hover:text-lightgreen/80' target="_blank" rel="noopener noreferrer">
               <FaDiscord />
             </a>
-            <a href="https://github.com/JessicaRagnar/NLS" className='hover:text-offwhite/80' target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/JessicaRagnar/NLS" className='hover:text-bluegreen/80' target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
           </div>

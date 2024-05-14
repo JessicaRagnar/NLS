@@ -24,33 +24,40 @@ const Home = () => {
     const scrollToAbout = () => {
         aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
+
     return (
-        <div id="home" className="flex flex-col min-h-screen">
+        
+        <div id="homeSection" className="flex flex-col min-h-screen">
             <div className="flex-grow">
                 <div className='relative w-full h-screen'>
                     <img className="absolute top-0 left-0 w-full h-screen object-cover" src={backgroundImage} alt="Background" />
                     <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-nightblue to-nightblue/10"></div>
 
-                    <div className='absolute top-0 w-full h-full flex justify-center items-center text-offwhite'>
-                        <div className='flex justify-between items-center px-40'>
+                    <div className='absolute top-0 w-full h-full flex justify-center items-center text-offwhite p-4 md:p-0'>
+                        <div className='flex flex-col md:flex-row justify-between items-center md:items-start w-full px-4 md:px-40 py-0'>
 
-                            <div className='flex-none flex-col justify-center items-start flex-shrink: 0;'>
-                                <h2 className='text-5xl md:text-6xl drop-shadow-2xl'>
-                                    Northern<br />
-                                    Lights
-                                    Society
+                            <div className='flex-none flex-col justify-center items-start mb-12 md:items-start '>
+                                <h2 className='text-4xl md:text-6xl drop-shadow-2xl text-center md:text-left'>
+                                    <span className='block'>Northern</span>
+                                    <span className='block'>Lights</span>
+                                    <span className='block'>Society</span>
                                 </h2>
-                                <p className='text-xl md:text-xl my-10'>
-                                    Immerse yourself in a world of thrilling adventures<br />
-                                    and interactive stories! We create digital escape rooms<br />
-                                    and narratives that takes you on an unforgettable journey!<br />
+
+                                <p className='text-base md:text-xl my-4 md:my-10 text-center md:text-left break-words custom-text-format'>
+                                    Immerse yourself in a world of thrilling adventures
+                                    and interactive stories! We create digital escape rooms
+                                    and narratives that take you on an unforgettable journey!
                                 </p>
-                                <MainButton onClick={scrollToAbout}>
-                                    Discover Our Story
-                                </MainButton>
+
+                                <div className="flex justify-center md:justify-start">
+                                    <MainButton onClick={scrollToAbout} className="md:m-0">
+                                        Discover Our Story
+                                    </MainButton>
+                                </div>
+
                             </div>
 
-                            <div className='flex-1 justify-end items-end ml-12'>
+                            <div className='flex-1 justify-center md:justify-end hidden md:flex'>
                                 <FeatureList />
                             </div>
                         </div>
@@ -60,10 +67,8 @@ const Home = () => {
             <ImageDivider />
             <div ref={aboutRef}><About /></div>
             <ScrollToTopButton />
-       
         </div>
-
-    )
+    );
 }
 
 export default Home;

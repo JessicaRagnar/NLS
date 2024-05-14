@@ -23,6 +23,7 @@
     text-transform: capitalize;
   }
   
+  
   @keyframes text-fade {
     0%, 100% {
       opacity: 1;
@@ -52,4 +53,6 @@
     }
   }
 
+
+  
   
