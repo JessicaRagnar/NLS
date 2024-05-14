@@ -41,3 +41,66 @@
 .active {
     color: #1EFFE7;
 }
+
+/* Navbar.css */
+@keyframes aurora {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* TEXTLOGO EFFEKT */
+.northern-lights-effect {
+    display: inline-block;
+    background: linear-gradient(270deg, #328F99, #113C54, #328F99, #1EFFE7, #FF60B1);
+    background-size: 400% 400%;
+    animation: aurora 20s ease infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.northern-lights-effect:hover {
+    animation: aurora 6s ease infinite;
+
+}
+
+
+/* RESPONSIVITET */
+@media (max-width: 768px) {
+    .navbar {
+        margin: 0;
+    }
+
+    .navbar ul {
+        width: 100%;
+        align-items: flex-start;
+        gap: 2px;
+
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .navbar-link-effect {
+        display: block;
+        width: 100%;
+        padding: 0px 0px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-link-effect:hover,
+    .navbar-link-effect:active {
+        background-color: #082134;
+        color: #1EFFE7;
+    }
+}

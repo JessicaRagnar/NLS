@@ -38,7 +38,7 @@ const Contact = () => {
                                 Join our Discord server to engage with our community and stay up to date about us!
                             </p>
                             <h4 className="text-3xl pl-6 mb-1 text-hotpink">
-                                <a href="/forum" className="bg-arrow no-underline hover:text-lightgreen/20 flex items-center justify-between">
+                                <a href="https://discord.com" className="bg-arrow no-underline hover:text-lightgreen/20 flex items-center justify-between">
                                     JOIN OUR DISCORD
                                 </a>
                             </h4>

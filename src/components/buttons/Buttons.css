@@ -6,9 +6,9 @@
     color: transparent;
     font-weight: 700;
   }
-
+/* PINK GLOW */
   .shadow-glow {
-    box-shadow: 0 0 20px 20px rgba(255, 20, 147, 0.75); /* Rosa glöd */
+    box-shadow: 0 0 20px 20px rgba(255, 20, 147, 0.75); 
   }
 
 

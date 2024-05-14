@@ -30,7 +30,7 @@ body {
 
   /* HERO & NAV LOGO*/
   h1 {
-    @apply font-logo capitalize font-medium text-offwhite/60;
+    @apply font-logo capitalize font-semibold;
   }
 
   /* HEADING */
@@ -40,7 +40,7 @@ body {
 
   /* FEATURELIST */
   h3 {
-    @apply font-logo font-semibold text-transparent bg-clip-text bg-gradient-to-l from-lightgreen to-offwhite p-2;
+    @apply font-logo font-semibold text-transparent bg-clip-text bg-gradient-to-l from-bluegreen to-lightgreen p-2;
   }
 
   /* SMALL HEADING */
@@ -53,6 +53,12 @@ body {
     @apply font-body font-normal leading-5 text-left pb-4;
   }
 
+  /* FOOTER */
+  h6 {
+    @apply font-body text-transparent bg-clip-text bg-gradient-to-br from-lightgreen to-bluegreen pb-2;
+  }
+
+  /* BODY */
   p {
     @apply font-body font-normal text-offwhite leading-6 text-left pb-4;
   }
@@ -80,6 +86,7 @@ body {
   }
 
 }
+
 /* ANIMATION PULSE */
 @keyframes pulse {
   0% {
@@ -99,9 +106,10 @@ body {
   animation: pulse 20s infinite;
 }
 
-
+/* TRANSITION FOR BUTTON */
 .transition-opacity {
-  transition: opacity 20s ease-in-out; /* Smooth transition for opacity change */
+  transition: opacity 10s ease-in-out;
+  /* Smooth transition for opacity change */
 }
 
 
@@ -149,4 +157,6 @@ body {
   background: #1effe983;
 }
 
-
+.custom-text-format {
+  max-width: 500px; /* Adjust width to manage breaks */
+}
