@@ -1,7 +1,6 @@
 import React from 'react';
-import ScrollToTopButton from '../components/buttons/BackToTop';
 import Footer from '../components/Footer';
-import CardLargeAbout from './cards/CardLargeAbout';
+import CardLargeAbout from '../components/cards/CardLargeAbout';
 
 const About = () => {
   return (
