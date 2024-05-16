@@ -58,7 +58,7 @@
 }
 
 /* TEXTLOGO EFFEKT */
-.northern-lights-effect {
+.northern-lights-effect:hover {
     display: inline-block;
     background: linear-gradient(270deg, #328F99, #113C54, #328F99, #1EFFE7, #FF60B1);
     background-size: 400% 400%;
@@ -66,13 +66,8 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-}
-
-.northern-lights-effect:hover {
-    animation: aurora 6s ease infinite;
 
 }
-
 
 /* RESPONSIVITET */
 @media (max-width: 768px) {

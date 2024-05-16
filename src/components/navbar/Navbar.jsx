@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav id="home" className="navbar flex items-center md:px-16 md:py-20 bg-nightblue text-2xl">
             <div className="flex w-full flex-wrap items-center justify-between mx-auto p-4 md:p-0">
                 <RouterNavLink to="/" onClick={handleNavLinkClick}>
-                <h1 className="northern-lights-effect text-3xl">Northern Lights Society</h1>
+                <h1 className="northern-lights-effect text-3xl text-offwhite/40">Northern Lights Society</h1>
                 </RouterNavLink>
 
                 <button onClick={toggleMenu} className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden" aria-expanded={isMenuOpen}>
