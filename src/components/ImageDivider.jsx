@@ -1,6 +1,6 @@
 import React from 'react'
 import backgroundImage from '../assets/images/background.png';
-import starryskyImage from '../assets/images/starrysky.png';
+import starryskyImage from '../assets/images/nls.png';
 
 const ImageDivider = () => {
     return (
