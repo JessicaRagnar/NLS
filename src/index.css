@@ -30,12 +30,12 @@ body {
 
   /* HERO & NAV LOGO*/
   h1 {
-    @apply font-logo capitalize font-semibold;
+    @apply font-logo capitalize font-medium;
   }
 
   /* HEADING */
   h2 {
-    @apply font-heading uppercase font-medium text-transparent bg-clip-text bg-gradient-to-l from-brightturquise to-lightgreen pb-2;
+    @apply font-heading uppercase font-medium text-transparent bg-clip-text bg-gradient-to-l from-brightturquise to-lightgreen pb-4;
   }
 
   /* FEATURELIST */
@@ -60,7 +60,7 @@ body {
 
   /* BODY */
   p {
-    @apply font-body font-normal text-offwhite leading-6 text-left pb-4;
+    @apply font-body font-normal text-offwhite pb-4 text-base text-left md:text-xl;
   }
 }
 
@@ -160,3 +160,5 @@ body {
 .custom-text-format {
   max-width: 500px; /* Adjust width to manage breaks */
 }
+
+

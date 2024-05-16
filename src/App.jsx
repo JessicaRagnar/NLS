@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Home from './pages/Home';
 import About from './components/About';
 import Adventures from './pages/Adventures';
+import Community from './pages/Community';
 import Guidance from './pages/Guidance';
 import Contact from './pages/Contact';
 import NotFoundPage from './pages/NotFoundPage';
@@ -21,6 +22,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="adventures" element={<Adventures />} />
+        <Route path="community" element={<Community />} />
         <Route path="guidance" element={<Guidance />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFoundPage />} />

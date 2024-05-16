@@ -1,0 +1,16 @@
+.background-container {
+    background-image: 
+      linear-gradient(to left, 
+        rgba(8, 33, 52, 1) 0%, 
+        rgba(8, 33, 52, 1) 20%, 
+        rgba(8, 33, 52, 1) 25%, 
+        rgba(8, 33, 52, 1) 50%, 
+        rgba(8, 33, 52, 0.5) 75%, 
+        rgba(8, 33, 52, 0) 100%),
+      url('../../assets/images/mountain2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 1.5rem;
+  }
+  
