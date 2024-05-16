@@ -1,5 +1,5 @@
 import React from 'react'
-import ChatButton from './buttons/ChatButton'
+import ChatButton from '../buttons/ChatButton'
 import chatBookImage from '/src/assets/images/chat_book.png'
 
 const ChatIcon = () => {

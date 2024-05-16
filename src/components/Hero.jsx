@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         <div className={`mb-24 transition-opacity duration-1000 ${isVisible ? 'opacity-80' : 'opacity-0'}`}>
-          <Link to="/home#home">
+          <Link to="#home">
             <MainButton>
               Let the journey begin!
             </MainButton>

@@ -2,7 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/Hero';
 import Home from './pages/Home';
-import About from './components/About';
+import About from './pages/About';
 import Adventures from './pages/Adventures';
 import Community from './pages/Community';
 import Guidance from './pages/Guidance';

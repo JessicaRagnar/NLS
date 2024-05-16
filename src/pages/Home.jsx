@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import MainButton from '../components/buttons/MainButton';
 import FeatureList from '../components/FeatureList/FeatureList';
-import About from '../components/About';
+import About from '../pages/About';
 import ImageDivider from '../components/ImageDivider';
 import ScrollToTopButton from '../components/buttons/BackToTop';
 import backgroundImage from '../assets/images/background.png';

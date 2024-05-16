@@ -1,5 +1,5 @@
 import React from 'react';
-import MainButton from './buttons/MainButton'
+import MainButton from '../buttons/MainButton'
 
 function ContactForm() {
   return (
