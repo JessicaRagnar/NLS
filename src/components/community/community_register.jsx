@@ -54,7 +54,7 @@ const Register = () => {
                 <div className="flex flex-col w-full md:w-1/2 bg-cardbg rounded-xl shadow p-8">
                     <h2 className="text-4xl md:text-5xl text-center mb-8">Become a Member</h2>
                     <div className="flex items-center justify-center mb-6">
-                        <img src={logoIcon} alt="Logo Icon" className="w-auto h-40" />
+                        <img src={logoIcon} alt="Logo Icon" className="pulse-effect w-auto h-40" />
                     </div>
                     <p className="text-base text-offwhite mb-4 text-center md:text-left md:text-lg">
                         Joining our community provides you with exclusive access to a range of exciting benefits, including:

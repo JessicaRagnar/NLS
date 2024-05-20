@@ -1,25 +1,53 @@
-import React, { useState } from 'react';
-import { AiFillSound, AiOutlineSound } from 'react-icons/ai';
+import React, { useState, useEffect, useRef } from 'react';
+import { FaVolumeMute, FaVolumeDown } from 'react-icons/fa';
+import music from '../../assets/music/SPRING OF DECEPTION - Density & Time.mp3'; 
 
 const SoundToggle = () => {
-    const [soundOn, setSoundOn] = useState(true); // Tillstånd för att spåra om ljudet är på eller av
+    const audioRef = useRef(new Audio(music)); 
+    const [soundOn, setSoundOn] = useState(() => {
+
+        const savedSoundOn = sessionStorage.getItem('soundOn');
+        return savedSoundOn === null ? true : JSON.parse(savedSoundOn);
+    });
 
     const toggleSound = () => {
-        setSoundOn(!soundOn); // Växlar ljudtillståndet
+        setSoundOn(prevSoundOn => {
+            const newSoundOn = !prevSoundOn;
+            sessionStorage.setItem('soundOn', JSON.stringify(newSoundOn)); 
+            if (newSoundOn) {
+                audioRef.current.play().catch(error => {
+                    console.error("Playback error:", error);
+                });
+            } else {
+                audioRef.current.pause();
+            }
+            return newSoundOn;
+        });
     };
 
-    return (
-        <div>
-            <div className="bg-cardbg/80 p-3 rounded-l-lg cursor-pointer hover:bg-nightblue/80 transition-colors"
+    useEffect(() => {
+        if (soundOn) {
+            audioRef.current.play().catch(error => {
+                console.error("Playback error:", error);
+            });
+        } else {
+            audioRef.current.pause();
+        }
 
-                onClick={toggleSound}
-            >
-                {soundOn ? (
-                    <AiFillSound className='text-brightturquise/30' size={25} />
-                ) : (
-                    <AiOutlineSound className='text-brightturquise/30' size={25} />
-                )}
-            </div>
+        return () => {
+            audioRef.current.pause();
+        };
+    }, [soundOn]);
+
+    return (
+        <div className="bg-cardbg/80 p-3 rounded-l-lg cursor-pointer hover:bg-nightblue/80 transition-colors"
+            onClick={toggleSound}
+        >
+            {soundOn ? (
+                <FaVolumeDown className='text-brightturquise/30' size={25} />
+            ) : (
+                <FaVolumeMute className='text-brightturquise/30' size={25} />
+            )}
         </div>
     );
 };
