@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import MainButton from './buttons/MainButton';
 import './stars.css'
 import '../components/buttons/Buttons.css';
-import nlsImage from '../assets/images/nls.png';
+import nlsImage from '../assets/images/flowerbg.png';
 import UIControlPanel from '../components/UIControlPanel/UIControlPanel';
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
        <UIControlPanel />
       <img className="absolute top-0 left-0 w-full h-screen object-cover" src={nlsImage} alt="Background" />
 
-      <div className='absolute top-0 left-0 w-full h-screen bg-black/30'></div>
+      <div className='absolute top-0 left-0 w-full h-screen bg-black/50'></div>
       <div className='absolute top-0 w-full h-full flex flex-col justify-end items-center text-center'>
      
         <div className="star-container">
