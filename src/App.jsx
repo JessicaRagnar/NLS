@@ -8,6 +8,9 @@ import Community from './pages/Community';
 import Guidance from './pages/Guidance';
 import Contact from './pages/Contact';
 import NotFoundPage from './pages/NotFoundPage';
+import Minigames from './pages/Minigames';
+import Stories from './pages/Stories';
+
 
 function App() {
   const location = useLocation();
@@ -26,6 +29,9 @@ function App() {
         <Route path="guidance" element={<Guidance />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFoundPage />} />
+
+        <Route path="minigames" element={<Minigames />} />
+        <Route path="stories" element={<Stories />} />
       </Routes>
     </div>
   );

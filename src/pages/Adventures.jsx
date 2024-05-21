@@ -1,27 +1,22 @@
-import React from 'react'
-import FeatureList from '../components/FeatureList/FeatureList.jsx'
-import ScrollToTopButton from '../components/buttons/BackToTop'
+import React from 'react';
+import Hero from '../components/adventures/adventure_hero';
+import FeatureList from '../components/FeatureList/FeatureList.jsx';
+import Footer from '../components/Footer.jsx';
 
-const Adventures = () => {
-    return (
-        <div id="adventures" className="flex flex-col min-h-screen">
-            <div className="flex-grow">
-                <div className='relative w-full h-screen'>
-                    <img className="absolute top-0 left-0 w-full h-screen object-cover" src="././src/assets/images/background.png" alt="Background" />
-                    <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-nightblue to-nightblue/10"></div>
-
-                    <div className='absolute top-0 w-full h-full flex justify-center items-center text-offwhite'>
-                        <div className='flex justify-between items-center px-20'>
-
-                            <FeatureList />
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ScrollToTopButton />
+const Community = () => {
+  return (
+    <div>
+      <Hero />
+      <div className='relative py-48'>
+        <div className='absolute inset-0 bg-bgIMG bg-cover bg-center'></div>
+        <div className='absolute inset-0 bg-gradient-to-b from-background via-transparent to-background'></div>
+        <div className='relative'>
+          <FeatureList />
         </div>
-    )
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default Adventures
+export default Community;

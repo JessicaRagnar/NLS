@@ -22,7 +22,8 @@ const Hero = () => {
        <UIControlPanel />
       <img className="absolute top-0 left-0 w-full h-screen object-cover" src={nlsImage} alt="Background" />
 
-      <div className='absolute top-0 left-0 w-full h-screen bg-black/50'></div>
+      <div className='absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-nightblue/100 to-transparent'></div>
+
       <div className='absolute top-0 w-full h-full flex flex-col justify-end items-center text-center'>
      
         <div className="star-container">

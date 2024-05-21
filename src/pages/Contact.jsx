@@ -10,11 +10,11 @@ const Contact = () => {
         <div>
             <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-b from-nightblue to-nightblue/10 p-4 lg:p-20">
                 <div className="w-full lg:px-20 flex flex-col lg:flex-row items-center lg:items-start justify-start space-y-8 lg:space-y-0 lg:space-x-8">
-                    {/* Left Column */}
+                  
                     <div className="w-full lg:w-2/3 flex flex-col items-center lg:items-start justify-start space-y-8 lg:space-y-0">
                         <CardContact />
                     </div>
-                    {/* Right Column */}
+             
                     <div className="w-full lg:w-1/3 flex flex-col items-center space-y-8">
                         <CardDiscord />
                         <CardForum />

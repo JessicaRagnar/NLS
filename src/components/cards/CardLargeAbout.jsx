@@ -4,7 +4,7 @@ import './cards.css';
 const CardLargeAbout = () => {
     return (
         <div className="flex items-start justify-center min-h-screen bg-nightblue dark:bg-gray-900 p-4 md:p-36">
-            <div className="background-container block w-full max-w-full p-8 rounded-3xl shadow">
+            <div className="background-container block w-full max-w-full p-2 rounded-3xl shadow">
             <div className="gradient-overlay rounded-3xl"></div>
                 <div className="text-center mb-6">
                     <h2 className="text-4xl md:text-4xl lg:text-5xl xl:text-5xl mt-6">Welcome to Northern Lights Society</h2>
