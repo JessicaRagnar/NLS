@@ -21,10 +21,10 @@ function FeatureList() {
                 </Link>
             </div>
             <div className="feature-card">
-                <a href="/escaperooms" className="flex flex-col items-center space-y-2">
+                <Link to="/nls/escaperooms" className="flex flex-col items-center space-y-2">
                     <img src={escaperooms} className="slider-image" alt="Escape Rooms" />
                     <h3 className="text-4xl">escape rooms</h3>
-                </a>
+                </Link>
             </div>
         </div>
     );
